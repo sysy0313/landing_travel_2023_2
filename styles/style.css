@@ -1,0 +1,231 @@
+/* 공통 */
+/* 예약a */
+.tour_go {
+    width:373px; height:63px; 
+    display:flex; flex-flow:row nowrap; justify-content:center; align-items:center;
+    background:#F45050; border-radius:50px;}
+.tour_go span {
+    font-family:'cafe'; color:#fff; font-size:1.777rem; letter-spacing:-0.02em; 
+    margin-right:10px;
+    
+}
+.tour_go img {}
+/* title */
+.title {
+    display:flex; flex-flow:column nowrap; align-items:center;
+}
+.title .small {
+    color:#00134A; font-size:1.333rem; font-weight:700; letter-spacing:-0.02em; margin-bottom:15px;
+}
+.title .big {
+    font-family:'cafe'; font-size:3.157rem; color:#00134A; margin-bottom:8px;
+}
+.title .en {
+    font-family:'sarina'; color:rgba(244, 80, 80, 0.80); font-size:3.157rem; letter-spacing:-0.04em;
+}
+.desc {
+    font-size:1.333rem; letter-spacing:-0.04em; line-height:38px; text-align:center; font-weight:500;
+}
+/* 1. 커버 */
+.cover_bg {
+    background:url(../images/bg1.jpg) no-repeat fixed bottom;
+    background-size:cover;
+}
+.cover_bg .cover {
+    width:1200px; height:900px; margin:0 auto;
+    display:flex; flex-flow:column nowrap; align-items:center;
+}
+.cover_bg .cover h1 {margin-top:105px; margin-bottom:321px; width:483px;}
+.cover_bg .cover h1 img {width:483px;}
+/* 2.혜택 */
+.benefit_bg {
+    background:linear-gradient(180deg, #FFF 0%, #F0F0F0 99.99%, #F3F3F3 100%);
+}
+.benefit_bg .benefit {width:1200px; margin:0 auto; padding:100px 0;}
+.benefit_bg .benefit > * {margin-bottom:50px;}
+.benefit_bg .benefit > *:last-child {margin-bottom:0;}
+.benefit_bg .benefit .benefit_list {
+    display:flex; flex-flow:row nowrap; justify-content:centers;
+}
+.benefit_bg .benefit .benefit_list li {
+    width:calc(33.33% - 120px / 3); margin-right:60px;
+    display:flex; flex-flow:column nowrap; align-items:center;
+}
+.benefit_bg .benefit .benefit_list li > * {margin-bottom:25px;}
+.benefit_bg .benefit .benefit_list li > *:last-child {margin-bottom:0;}
+.benefit_bg .benefit .benefit_list li:last-child {margin-right:0;}
+.benefit_bg .benefit .benefit_list  li img {}
+.benefit_bg .benefit .benefit_list  li em {font-family:'cafe'; font-size:1.777rem; letter-spacing:-0.04em; color:#00134A;}
+.benefit_bg .benefit .benefit_list  li span {font-weight:500; letter-spacing:-0.04em;}
+/* 3.명소 */
+.place_bg {
+    background:url(../images/bg3.jpg) no-repeat bottom; background-size:cover;
+}
+.place_bg .place {width:1200px; margin:0 auto; padding:100px 0;}
+.place_bg .place > * {margin-bottom:50px;}
+.place_bg .place > *:last-child {margin-bottom:0;}
+.place_bg .place .map {width:1200px; margin:0 auto;}
+.place_bg .place .map img {}
+.place_bg .place .place_list {}
+.place_bg .place .place_list li {
+    display:flex; flex-flow:row nowrap; align-items:center; justify-content:space-between;
+    margin-bottom:50px;
+}
+.place_bg .place .place_list li:last-child {margin-bottom:0;}
+.place_bg .place .place_list li .left {width:655px;}
+.place_bg .place .place_list li .left img {width:100%;}
+.place_bg .place .place_list li:nth-child(2) .left {order:10;}
+.place_bg .place .place_list li:nth-child(2) .right {order:1; width:530px;}
+.place_bg .place .place_list li:nth-child(4) .left {order:10;}
+.place_bg .place .place_list li:nth-child(4) .right {order:1; }
+.place_bg .place .place_list li .right {width:500px;}
+.place_bg .place .place_list li .right h3 {margin-bottom:30px;}
+.place_bg .place .place_list li .right h3 em {
+    font-family:'cafe'; font-size:2.369rem; color:#00134A; letter-spacing:-0.04em; 
+}
+.place_bg .place .place_list li .right h3 .en {
+    font-family:'sarina'; color:rgba(244, 80, 80, 0.80); font-size:1.333rem; letter-spacing:-0.06em;
+}
+.place_bg .place .place_list li .right .detail {
+    letter-spacing:-0.04em; line-height:35px;
+}
+.place_bg .place iframe {width:1200px;}
+/* 4.박물관 */
+.museum_bg {background:url(../images/bg4.jpg) no-repeat; background-size:cover;}
+.museum_bg .museum {width:1200px; margin:0 auto; padding:100px 0;}
+.museum_bg .museum .title {margin-bottom:50px;}
+.museum_bg .museum .museum_list {}
+.museum_bg .museum .museum_list li:first-child {margin-bottom:50px;}
+.museum_bg .museum .museum_list li:nth-child(2) .img {order:10;}
+.museum_bg .museum .museum_list li:nth-child(2) .museum_detail {order:1;}
+.museum_bg .museum .museum_list li {display:flex; flex-flow:row nowrap; justify-content:space-between; align-items:center;}
+.museum_bg .museum .museum_list li .img {}
+.museum_bg .museum .museum_list li .img  img {width:659px;}
+.museum_bg .museum .museum_list li .museum_detail {}
+.museum_bg .museum .museum_list li .museum_detail h3 {margin-bottom:25px;}
+.museum_bg .museum .museum_list li .museum_detail h3 em {
+    font-family:'cafe'; font-size:2.369rem; color:#00134A; letter-spacing:-0.04em;
+}
+.museum_bg .museum .museum_list li .museum_detail h3 .en {
+    font-family:'sarina'; font-size:1.333rem; color:rgba(244, 80, 80, 0.80); letter-spacing:-0.04em;
+}
+.museum_bg .museum .museum_list li .museum_detail p.detail {
+    width:496px; letter-spacing:-0.04em; line-height:35px;
+}
+/* 5.패키지 */
+.package_bg {background:url(../images/bg5.jpg) no-repeat; background-size:cover;}
+.package_bg .package {width:1200px; margin:0 auto; padding:100px 0; display:flex; flex-flow:column nowrap; 
+    align-items:center;
+}
+.package_bg .package > * {margin-bottom:50px;}
+.package_bg .package > *:last-child {margin-bottom:0;}
+.package_bg .package_list {
+    display:flex; flex-flow:row nowrap; justify-content:center; 
+}
+.package_bg .package_list li {
+    width:calc(33.33% - 126px / 3); margin-right:63px;
+    position:relative; 
+}
+.package_bg .package_list li:last-child {margin-right:0;}
+.package_bg .package_list li .img {}
+.package_bg .package_list li .img img {}
+.package_bg .package_list li .pack_contents {
+    width:100%;
+    position:absolute; top:250px;
+    display:flex; flex-flow:column nowrap; align-items:center; 
+}
+.package_bg .package_list li .pack_contents .pack_title1 {
+    font-size:1.333rem; color:#00134A; font-weight:500; letter-spacing:-0.08em; 
+    margin-bottom:15px; display:flex; flex-flow:column nowrap; align-items:center;
+}
+.package_bg .package_list li .pack_contents .pack_title1::after {
+    content:''; display:block; background:#F45050; width:64px; height:1px;
+    margin-top:20px;
+}
+.package_bg .package_list li .pack_contents .pack_title2 {
+    font-family:'cafe'; font-size:2.369rem; color:#F45050; letter-spacing:-0.02em;
+    margin-bottom:25px;
+}
+.package_bg .package_list li .pack_contents .pack_detail {
+    letter-spacing:-0.08em; line-height:40px; text-align:center;    
+}
+/* 6.음식 */
+.food_bg {background: linear-gradient(180deg, rgba(255, 193, 193, 0.50) 0%, rgba(255, 255, 255, 0.00) 100%), #FFE7E7;}
+.food_bg .food {width:1200px; margin:0 auto; padding:100px 0;}
+.food_bg .food .food_list {
+    display:flex; flex-flow:row wrap; justify-content:center; margin-top:50px;
+}
+.food_bg .food .food_list li {
+    width:calc(33.33% - 150px / 3); margin-right:75px;
+    display:flex; flex-flow:column nowrap; align-items:center;
+    margin-bottom:50px;
+}
+.food_bg .food .food_list li:nth-child(4),
+.food_bg .food .food_list li:nth-child(5),
+.food_bg .food .food_list li:nth-child(6) {margin-bottom:0;}
+.food_bg .food .food_list li:nth-child(3n) {margin-right:0;}
+.food_bg .food .food_list li .food_img {margin-bottom:16px;}
+.food_bg .food .food_list li .food_img img {}
+.food_bg .food .food_list li .food_name {
+    font-family:'cafe'; color:#00134A; font-size:1.777rem; letter-spacing:-0.04em; 
+    width: 323px; height:55px; border:1px solid #F45050; border-left:none; border-right:none;
+    display:flex; flex-flow:row nowrap; justify-content:center; align-items:center; margin-bottom:16px;
+}
+.food_bg .food .food_list li .food_detail {
+    letter-spacing:-0.04em; line-height:40px; text-align:center;
+}
+/* 7.이벤트 */
+.event_bg {background:url(../images/bg7.jpg) no-repeat; background-size:cover;}
+.event_bg .event {width:1200px; margin:0 auto; padding:100px 0;}
+.event_bg .event > * {margin-bottom:50px;}
+.event_bg .event > *:last-child {margin-bottom:0;}
+.event_bg .event .event_desc {font-size:1.777rem; font-weight:700; color:#00134A; text-align:center; letter-spacing:-0.04em;}
+.event_bg #eventFrm {}
+.event_bg #eventFrm fieldset {
+    display:flex; flex-flow:column nowrap; align-items:center;
+}
+.event_bg #eventFrm fieldset ul {
+    display:flex; flex-flow:row nowrap; justify-content:space-between; margin-bottom:50px;
+}
+.event_bg #eventFrm fieldset ul li {width:calc(25% - 78px / 4); margin-right:26px;
+}
+.event_bg #eventFrm fieldset ul li:last-child {margin-right:0;}
+.event_bg #eventFrm fieldset ul li label {
+    width:280px; height:350px; display:flex; flex-flow:column nowrap;
+    align-items:center;
+}
+.event_bg #eventFrm fieldset ul li:nth-child(1) label {background:url(../images/event1.png);}
+.event_bg #eventFrm fieldset ul li:nth-child(2) label {background:url(../images/event2.png);}
+.event_bg #eventFrm fieldset ul li:nth-child(3) label {background:url(../images/event3.png);}
+.event_bg #eventFrm fieldset ul li:nth-child(4) label {background:url(../images/event4.png);}
+.event_bg #eventFrm fieldset ul li label input {appearance: none;}
+.event_bg #eventFrm fieldset ul li label span:nth-of-type(1) {font-size:1.333rem; color:#fff; letter-spacing:-0.06em; margin-bottom:23px; margin-top:60px;}
+.event_bg #eventFrm fieldset ul li label span:nth-of-type(2) {
+    font-size:1.777rem; letter-spacing:-0.04em; color:#fff; font-weight:700; margin-bottom:23px;
+}
+/* hover */
+.event_bg #eventFrm fieldset ul li label input:checked~img {opacity:1;}
+.event_bg #eventFrm fieldset ul li label:hover img {opacity:1;}
+.event_bg #eventFrm fieldset ul li label img {width:40px; opacity:0;}
+.event_bg #eventFrm fieldset ul li label #event1 {}
+.event_bg #eventFrm fieldset ul li label #event2 {}
+.event_bg #eventFrm fieldset ul li label #event3 {}
+.event_bg #eventFrm fieldset ul li label #event4 {}
+.event_bg #eventFrm fieldset #eventBtn {
+    width:380px; height:64px; border-radius:30px; background:#F45050;
+}
+.event_bg #eventFrm fieldset #eventBtn img {}
+.event_bg #eventFrm fieldset #eventBtn span {
+    font-family:'cafe'; font-size:1.777rem; letter-spacing:-0.07em; color:#fff;
+}
+/* 9.유의사항 */
+.info {
+    width:1200px; margin:0 auto;
+    padding:100px 0;
+}
+.info p:first-child{
+    font-size:1.333rem; letter-spacing:-0.06em; font-weight:500; margin-bottom:40px;
+}
+.info p:last-child{
+    letter-spacing:-0.06em; line-height:40px; 
+}
